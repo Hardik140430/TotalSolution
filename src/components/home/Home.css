@@ -1,0 +1,228 @@
+/* ----------------- hero section ------------------------ */
+
+
+/* ----------------- home product------------------------------ */
+
+.products {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.subproducts {
+  flex-basis: 22%;
+  /* width: 100%; */
+  position: relative;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 2px 2px 10px gray;
+}
+.subproducts img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 10px;
+  
+}
+.caption {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(1, 8, 10, 0.76);
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 50% 2%;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+
+.subproducts:hover .caption {
+  opacity: 1;
+  padding: 25% 2%;
+  text-align: justify;
+}
+.subproducts h2 {
+  font-family: ui-rounded;
+  font-weight: bolder;
+  color:#00a7de ;
+}
+
+.caption p {
+  margin-top: 5px;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+@media (max-width:1200px){
+  .subproducts {
+    flex-basis: 25%;
+  }
+  .subproducts h2 {
+    font-size: 15px;
+  }
+  .caption{
+    padding: 0;
+  }
+  .caption p {
+    font-size: 12px;
+    margin-top: 0px;    
+  }
+  .subproducts:hover .caption {
+    padding: 15% 2%;
+  }
+}
+@media (max-width:750px){
+  .products {
+    flex-direction: column;
+    margin: auto;
+    width: 70% !important;
+  }
+  .subproducts{
+    margin-bottom: 20px;
+   
+  }
+  .caption p {
+    font-size: 15px;       
+  }
+  
+  
+}
+
+/* ----------------------------- Quality Area ----------------------------- */
+
+.section-diagonal {
+  display: flex;
+  padding: 3rem 1.5rem;
+}
+.qualityhead {
+  width: 33.3%;
+  padding: 0.75rem;
+}
+.qualityhead h3 {
+  font-size: 1.6rem;
+  color: #3cb3db;
+}
+.qualitydetail {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 66.6%;
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding: 0.75rem;
+}
+
+@media (max-width: 740px) {
+  .section-diagonal{
+    display: block;
+    text-align: center;
+  }
+  .qualityhead {
+    width: 100%;
+  }
+  .qualitydetail{
+    width: 100%;
+  }
+}
+
+/* ------------------------ section About--------------------------------------- */
+
+.section-about {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.about-detail-head {
+  padding: 0% 5% 0% 5%;
+  color: #3cb3db;
+}
+.about-detail-para {
+  padding: 5%;
+  line-height: 1.5;
+  color: #2c1c1cab;
+}
+@media (max-width:1000px){
+  .section-about{
+    display: block;    
+  }
+  .sec-image{
+   text-align: center;
+  }
+  .sec-image img{
+    width: 100%;
+  }
+  .detail{
+    width: 100%;
+  }
+}
+
+/* ----------------- tsspl section-4 -------------------------------------- */
+.section-4-bg {
+  background: url("../../assets/images/TSSPL.png");
+  width: 98vw;
+  margin: auto;
+  min-height: 20vh;
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+  background-position: center;
+  background-size: cover;
+}
+.tsspl-section {  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;  
+
+}
+
+.count-display {
+  font-size: 48px;
+  transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.card p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.makequot span{
+  color: black;
+}
+
+@media (max-width:750px){
+  .tsspl-section{
+    flex-direction: column;
+    gap: 40px;        
+  }
+  
+}
+
+
+
+/* ------------------- section-5 clients------------------------------- */
+.client-side{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+@media (max-width:750px){
+  .client-side{
+    flex-direction: column;    
+    align-items: center;
+    gap: 5px;
+    
+  }
+}

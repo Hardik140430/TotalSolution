@@ -1,0 +1,118 @@
+nav {
+  background: #212121e3;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  right: 0;
+  top: 0;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 5px solid #3cb3db;
+  border-bottom: 5px solid #3cb3db;
+  z-index: 10;
+}
+.logo-div {
+  text-align: center;
+  background-color: white;
+}
+.logo {
+  max-width: 100%; /* Ensures the image won't overflow its container */
+  height:auto;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 75px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+nav ul li:hover{
+  color: rgb(64, 216, 230);
+}
+.contactbtn {
+  background: white;
+  color: #212121;
+  padding: 18px 13px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-icon {
+  display: none;
+}
+.active {
+  color: #3cb3db; /* Adjust to your active color */
+  font-weight: bold;
+}
+
+/* ------------------ Media Query ---------------------------------------- */
+
+@media (max-width: 1200px) {
+  nav ul li {
+    margin: 5px 30px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  nav {
+    padding: 0;
+    justify-content: center;
+    position: sticky;   
+    /* overflow-y: hidden;   */
+  }
+  nav ul {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    right: 0;
+    background: #212121e3;
+    width: 200px;
+    padding-top: 70px;    
+    height: 100vh;    
+    border-left: 5px solid #3cb3db;
+  }
+  nav ul li {
+    display: block;
+    margin: 30px 22px;
+    font-size: 16px;
+  }
+  .contactbtn {
+    padding: 15px 10px;
+    display: flex;
+  }
+  .menu-icon {
+    display: block;
+    width: 40px;
+    margin-left: auto;    
+  }
+  .menuback {
+    background: blue;
+  }
+  .hide-menu {    
+    display: none;
+    transition: 0.5s;
+  }
+  .logo {
+    width: 80%; /* Set width to a percentage for better scaling */
+    height: 70px;
+
+  } 
+}
+
+
+
+@media (max-width:420px) {
+  .logo {
+    width: 80%; /* Set width to a percentage for better scaling */
+    height: 50px;
+  } 
+}

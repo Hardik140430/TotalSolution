@@ -1,0 +1,104 @@
+.main-footer {
+    margin-top: 50px;
+    background: #222;
+    padding: 20px 20px;
+  }
+  .footer-block-title {
+    color: #3cb3db;
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .footer {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    text-align: justify;
+  }
+  .footer-div ul {
+    margin-top: 20px;
+    line-height: 2;
+    color: white;
+    list-style-type: none;
+  }
+  .footer-div {
+    width: 33.33%;
+  }
+  .footer-div ul li {
+    padding: 3px;
+    width: 80%;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  .footer-part-2 {
+    color: white;
+  }
+  .footer-address {
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  .footer-address .maito {
+    color: #3cb3db;
+    text-decoration: underline;
+  }
+  .footer-part-3 {
+    margin-left: 20px;
+  }
+  .footer-map {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .right-reserve {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+    padding-top: 20px;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .social-links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .icons {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+  .insta-icon {
+    background-color: rgb(214, 41, 118);
+  }
+  .fb-icon{
+      margin-left: 15px;
+      background-color: #316FF6;
+  }
+  .x-icon{
+      margin-left: 15px;
+      background-color: #000000;
+  }
+  
+  @media (max-width: 1200px) {
+    .footer {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .footer-div {
+      width: 100%;
+    }
+    .footer-div ul li {
+      width: 100%;
+    }
+  }
+  @media (max-width: 420px) {
+    .footer {
+      padding-left: 1px;
+    }
+    .main-footer {
+      padding-left: 5px;
+    }
+  }
+  

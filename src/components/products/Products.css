@@ -1,0 +1,114 @@
+.main-Product {
+  background: white;
+}
+
+.productbg {
+  background: url("../../assets/images/TSSPL.png");
+  width: 100%;
+  margin: auto;
+  min-height: 20vh;
+  padding: 50px;
+  color: white;
+  margin-bottom: 50px;
+
+}
+
+.tabhead {
+  font-size: 16px !important;
+}
+.product_image{
+  width: 100%;
+}
+.prod-caption-div {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(1, 8, 10, 0.76);
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 50% 2%;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.4s;
+
+}
+.grid-box:hover .prod-caption-div {
+  opacity: 1;
+  padding: 10% 2%;
+
+}
+.prod-caption-div p{
+  margin-top: 5px;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+
+
+@media (max-width: 600px) {
+  .productbg {
+    padding: 30px;
+    font-size: 14px;
+  }
+
+  .tabhead {
+    font-size: 14px !important;
+  }
+
+  .product-tabs {
+    margin-top: 20px;
+  }
+
+  .css-1usuzwp-MuiButtonBase-root-MuiTab-root {
+    width: auto !important;
+  }
+}
+
+.css-1usuzwp-MuiButtonBase-root-MuiTab-root {
+  align-items: start !important;
+  border-bottom: 1px solid gray !important;
+  width: 400px;
+}
+
+.css-1usuzwp-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: White !important;
+  background: rgba(0, 0, 0, 0.742);
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.grid-box {
+  background-color: #383d3e;
+  color: white;
+  height: 300px;
+  width: 250px;
+  border: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.grid-box img {
+  float: left;
+  width:  250px;
+  height: 250px;
+  object-fit:fill;
+  border-bottom: 1px solid black;
+}
+
+.img-name{
+  text-align: center;
+}
